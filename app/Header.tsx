@@ -26,15 +26,11 @@ const links: Link[] = [
   },
   {
     href: "/pknf",
-    text: "PKNF",
+    text: "První kroky",
   },
   {
     href: "/veda",
     text: "Věda",
-  },
-  {
-    href: "https://oliva.uhk.cz/",
-    text: "Blackboard",
   },
 ];
 
@@ -49,11 +45,11 @@ export default function Header() {
             PhDr. Věra Strnadová, Ph.D.
           </Link>
         </div>
-        <nav className={`absolute top-[59px] left-0 right-0 bg-sky-500 md:bg-transparent md:static ${visible ? "flex" : "hidden"} md:!flex md:items-center`}>
+        <nav className={`absolute top-[59px] z-20 left-0 right-0 bg-sky-500 md:bg-transparent md:static ${visible ? "flex" : "hidden"} md:!flex md:items-center`}>
           <ul className="flex flex-col md:flex-row max-md:w-full pb-4 px-8 md:p-0 items-end md:items-center gap-4 md:gap-5">
             {links.map((link) => (
               <li key={link.href} onClick={() => setVisible(false)}>
-                <Link href={link.href} className="font-semibold text-white hover:underline">
+                <Link href={link.href} className="font-semibold text-white hover:underline select-none">
                   {link.text}
                 </Link>
               </li>
@@ -61,7 +57,7 @@ export default function Header() {
           </ul>
         </nav>
         <button aria-label="Zobrazit navigaci" className="md:hidden" onClick={() => setVisible((v) => !v)}>
-          <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
+          <FontAwesomeIcon icon={faBars} className="text-white text-2xl select-none p-2 -m-2" />
         </button>
       </Container>
     </header>
