@@ -38,7 +38,7 @@ export default function Header() {
   const [visible, setVisible] = useState(false);
 
   return (
-    <header className="w-full py-4 md:py-5 px-6 bg-sky-500">
+    <header className="w-full py-4 md:py-5 px-6 bg-sky-500 relative">
       <Container className="flex justify-between items-center">
         <div>
           <Link href="/" className="text-lg text-white font-semibold">
