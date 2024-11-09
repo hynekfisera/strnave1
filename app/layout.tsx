@@ -1,19 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
 export const metadata: Metadata = {
   title: "PhDr. Věra Strnadová, Ph.D.",
@@ -26,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans bg-gray-50 text-gray-900`}>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased font-sans bg-gray-50 text-gray-900`}>
         <Header />
         {children}
         <Footer />
