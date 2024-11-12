@@ -17,19 +17,19 @@ type Link = {
 
 const links: Link[] = [
   {
-    href: "/prezentace.html",
+    href: "/prezentace",
     text: "Ukázkové prezentace",
   },
   {
-    href: "/seminarni-prace.html",
+    href: "/seminarni-prace",
     text: "Seminární práce",
   },
   {
-    href: "/klicova-slova.html",
+    href: "/klicova-slova",
     text: "Klíčová slova",
   },
   {
-    href: "/okruhy-ke-zkousce.html",
+    href: "/okruhy-ke-zkousce",
     text: "Okruhy ke zkoušce",
   },
 ];
@@ -49,11 +49,11 @@ export default function Navigation({ subject }: Props) {
     <header className="w-full py-3 lg:py-4 px-6 bg-gray-100 sticky top-0 border-b border-b-gray-200">
       <Container className="flex justify-between items-center">
         <div>
-          <Link href={linkPrefix + ".html"} className="lg:text-lg text-gray-800 font-semibold">
+          <Link href={linkPrefix} className="lg:text-lg text-gray-800 font-semibold">
             {subject}
           </Link>
         </div>
-        <nav className={`absolute top-[45px] z-10 left-0 right-0 bg-gray-100 md:bg-transparent md:static ${visible ? "flex" : "hidden"} md:!flex md:items-center`}>
+        <nav className={`absolute top-[45px] z-10 left-0 right-0 bg-gray-100 max-md:border-b max-md:border-b-gray-200 md:bg-transparent md:static ${visible ? "flex" : "hidden"} md:!flex md:items-center`}>
           <ul className="flex flex-col md:flex-row max-md:w-full pb-4 px-8 md:p-0 items-end md:items-center gap-4 md:gap-5">
             {links.map((link) => (
               <li key={linkPrefix + link.href} onClick={() => setVisible(false)}>

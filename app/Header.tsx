@@ -13,23 +13,23 @@ type Link = {
 
 const links: Link[] = [
   {
-    href: "/index.html",
+    href: "/index",
     text: "Úvod",
   },
   {
-    href: "/psy1.html",
+    href: "/psy1",
     text: "PSY1",
   },
   {
-    href: "/psy2.html",
+    href: "/psy2",
     text: "PSY2",
   },
   {
-    href: "/pknf.html",
+    href: "/pknf",
     text: "První kroky",
   },
   {
-    href: "/veda.html",
+    href: "/veda",
     text: "Věda",
   },
 ];
@@ -41,7 +41,7 @@ export default function Header() {
     <header className="w-full py-4 md:py-5 px-6 bg-sky-500 relative">
       <Container className="flex justify-between items-center">
         <div>
-          <Link href="/index.html" className="text-lg text-white font-semibold">
+          <Link href="/index" className="text-lg text-white font-semibold">
             PhDr. Věra Strnadová, Ph.D.
           </Link>
         </div>
