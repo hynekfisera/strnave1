@@ -49,7 +49,7 @@ export default function Navigation({ subject }: Props) {
     <header className="w-full py-3 lg:py-4 px-6 bg-gray-100 sticky top-0 border-b border-b-gray-200">
       <Container className="flex justify-between items-center">
         <div>
-          <Link href={linkPrefix} className="lg:text-lg text-gray-800 font-semibold">
+          <Link href={linkPrefix + ".html"} className="lg:text-lg text-gray-800 font-semibold">
             {subject}
           </Link>
         </div>
