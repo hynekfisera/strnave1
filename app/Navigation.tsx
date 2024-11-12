@@ -1,9 +1,9 @@
 "use client";
 
 import Container from "@/components/layout/Container";
+import Link from "@/components/utils/Link";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import React, { useState } from "react";
 
 type Props = {
@@ -17,19 +17,19 @@ type Link = {
 
 const links: Link[] = [
   {
-    href: "/prezentace",
+    href: "/prezentace.html",
     text: "Ukázkové prezentace",
   },
   {
-    href: "/seminarni-prace",
+    href: "/seminarni-prace.html",
     text: "Seminární práce",
   },
   {
-    href: "/klicova-slova",
+    href: "/klicova-slova.html",
     text: "Klíčová slova",
   },
   {
-    href: "/okruhy-ke-zkousce",
+    href: "/okruhy-ke-zkousce.html",
     text: "Okruhy ke zkoušce",
   },
 ];
