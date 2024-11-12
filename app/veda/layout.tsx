@@ -3,7 +3,7 @@ import ProseWrapper from "@/components/markdown/ProseWrapper";
 import Container from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "Věda",
+  title: "Vědecká činnost",
 };
 
 export default function Layout({

@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/fim/student/fiserhy1",
+  basePath: process.env.NEXT_PUBLIC_BASE_URL,
 };
 
 const withMDX = createMDX({

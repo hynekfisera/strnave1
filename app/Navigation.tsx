@@ -1,7 +1,7 @@
 "use client";
 
 import Container from "@/components/layout/Container";
-import { faBars, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -65,7 +65,7 @@ export default function Navigation({ subject }: Props) {
           </ul>
         </nav>
         <button aria-label="Zobrazit navigaci" className="md:hidden" onClick={() => setVisible((v) => !v)}>
-          <FontAwesomeIcon icon={faChevronDown} className="text-gray-700 text-xl select-none p-2 -m-2" />
+          <FontAwesomeIcon icon={visible ? faChevronUp : faChevronDown} className="text-gray-700 text-lg select-none p-2 -m-2" />
         </button>
       </Container>
     </header>

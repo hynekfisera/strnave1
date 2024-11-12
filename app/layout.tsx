@@ -6,7 +6,10 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
 export const metadata: Metadata = {
-  title: "PhDr. Věra Strnadová, Ph.D.",
+  title: {
+    template: "%s | PhDr. Věra Strnadová, Ph.D.",
+    default: "PhDr. Věra Strnadová, Ph.D.",
+  },
 };
 
 export default function RootLayout({
