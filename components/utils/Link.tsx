@@ -11,7 +11,7 @@ export default function Link({ href, className, children }: Props) {
 
   hrefBuilder += process.env.NEXT_PUBLIC_BASE_URL ?? "";
 
-  if (!href.includes("index")) {
+  if (!href.includes("index") || process.env.NODE_ENV !== "development") {
     hrefBuilder += href;
   }
 
