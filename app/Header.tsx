@@ -41,7 +41,7 @@ export default function Header() {
     <header className="w-full py-4 md:py-5 px-6 bg-sky-500 relative">
       <Container className="flex justify-between items-center">
         <div>
-          <Link href="/index" className="text-lg text-white font-semibold">
+          <Link href="/index" className="sm:text-lg text-white font-semibold">
             PhDr. Věra Strnadová, Ph.D.
           </Link>
         </div>

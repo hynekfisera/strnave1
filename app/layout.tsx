@@ -4,6 +4,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export const metadata: Metadata = {
   title: {
