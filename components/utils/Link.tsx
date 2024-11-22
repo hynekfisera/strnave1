@@ -4,9 +4,10 @@ type Props = {
   href: string;
   children: React.ReactNode;
   className?: string;
+  file?: boolean;
 };
 
-export default function Link({ href, className, children }: Props) {
+export default function Link({ href, className, children, file }: Props) {
   let hrefBuilder = "";
 
   if (href.startsWith("http")) {
@@ -18,7 +19,7 @@ export default function Link({ href, className, children }: Props) {
       hrefBuilder += href;
     }
 
-    if (process.env.NODE_ENV !== "development") {
+    if (process.env.NODE_ENV !== "development" && !file) {
       hrefBuilder += ".html";
     } else if (href.includes("index")) {
       hrefBuilder += "/";
