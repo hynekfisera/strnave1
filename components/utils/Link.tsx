@@ -9,16 +9,20 @@ type Props = {
 export default function Link({ href, className, children }: Props) {
   let hrefBuilder = "";
 
-  hrefBuilder += process.env.NEXT_PUBLIC_BASE_URL ?? "";
+  if (href.startsWith("http")) {
+    hrefBuilder = href;
+  } else {
+    hrefBuilder += process.env.NEXT_PUBLIC_BASE_URL ?? "";
 
-  if (!href.includes("index") || process.env.NODE_ENV !== "development") {
-    hrefBuilder += href;
-  }
+    if (!href.includes("index") || process.env.NODE_ENV !== "development") {
+      hrefBuilder += href;
+    }
 
-  if (process.env.NODE_ENV !== "development") {
-    hrefBuilder += ".html";
-  } else if (href.includes("index")) {
-    hrefBuilder += "/";
+    if (process.env.NODE_ENV !== "development") {
+      hrefBuilder += ".html";
+    } else if (href.includes("index")) {
+      hrefBuilder += "/";
+    }
   }
 
   return (

@@ -17,20 +17,24 @@ type Link = {
 
 const links: Link[] = [
   {
+    href: "/materialy",
+    text: "Materiály",
+  },
+  {
+    href: "/ukoly",
+    text: "Úkoly a zajímavosti",
+  },
+  {
     href: "/prezentace",
-    text: "Ukázkové prezentace",
+    text: "Prezentace",
   },
   {
     href: "/seminarni-prace",
     text: "Seminární práce",
   },
   {
-    href: "/klicova-slova",
-    text: "Klíčová slova",
-  },
-  {
-    href: "/okruhy-ke-zkousce",
-    text: "Okruhy ke zkoušce",
+    href: "/zkouska",
+    text: "Zkouška",
   },
 ];
 
