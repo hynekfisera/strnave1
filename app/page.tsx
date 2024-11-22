@@ -14,10 +14,10 @@ export default function Home() {
         <Image src={Logo} alt="UHK logo" className="h-full max-h-10 sm:max-h-12 w-auto" />
         <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-gray-900">PhDr. Věra Strnadová, Ph.D.</h1>
         <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 w-full max-w-xs sm:max-w-sm">
-          <Link href="/psy1" className="font-medium text-gray-900 border border-gray-400 hover:border-sky-500 p-2 sm:p-3 rounded-md group text-center">
+          <Link href="/psy1" className="select-none font-medium text-gray-900 border border-gray-400 hover:border-sky-500 p-2 sm:p-3 rounded-md group text-center">
             Psychologie I <FontAwesomeIcon icon={faArrowRight} className="ml-1 text-gray-400 group-hover:text-sky-500" />
           </Link>
-          <Link href="/psy2" className="font-medium text-gray-900 border border-gray-400 hover:border-sky-500 p-2 sm:p-3 rounded-md group text-center">
+          <Link href="/psy2" className="select-none font-medium text-gray-900 border border-gray-400 hover:border-sky-500 p-2 sm:p-3 rounded-md group text-center">
             Psychologie II <FontAwesomeIcon icon={faArrowRight} className="ml-1 text-gray-400 group-hover:text-sky-500" />
           </Link>
         </div>
