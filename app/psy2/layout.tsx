@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Navigation from "../Navigation";
+/* import Navigation from "../Navigation"; */
 import ProseWrapper from "@/components/markdown/ProseWrapper";
 import Container from "@/components/layout/Container";
 
