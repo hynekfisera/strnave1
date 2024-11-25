@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs">
-      <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased font-sans bg-gray-50 text-gray-900`}>
+      <body
+        className={`${GeistSans.variable} ${GeistMono.variable} antialiased font-sans bg-gray-50 text-gray-900`}
+      >
         <Header />
         {children}
         <Footer />
