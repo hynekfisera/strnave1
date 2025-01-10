@@ -5,20 +5,18 @@ import DontForget from "@/components/interactive/common/DontForget";
 import Alert from "@/components/common/Alert";
 
 const questions: string[] = [
-  "Máte strach z toho, že vás někdo bude žádat o laskavost?",
-  "Mlčíte, když vás někdo nespravedlivě kritizuje?",
-  "Přinesou-li vám v restauraci vlažné jídlo, sníte je?",
-  "Jsou pro vás potřeby druhých důležitější než vlastní?",
-  "Je pro vás obtížné zbavit se člověka, který obchází byty a něco prodává?",
-  "Ublíží-li vám přítel, obvykle mu o tom ani neřeknete?",
-  "Koupíte si láhev vína a zjistíte, že je zkyslá. Vyhodíte prostě láhev a pustíte to z hlavy?",
-  "Dozvíte se, že vás lidé pomlouvají. Budete mlčet a doufat, že přestanou?",
-  "Jestliže místo, které máte v letadle rezervované, je už obsazeno, začnete se rozhlížet po jiném?",
-  "Používáte „milosrdné“ lži, abyste neranili city svých přátel?",
-  "Vídáte se dosud se známými, kteří vás už léta nudí?",
-  "Zastavili jste taxík, ale jiný člověk vás předešel a nastoupil – začnete hledat nový?",
-  "Určují vaši přátelé váš společenský život?",
-  "Souhlasíte někdy s milováním se svým partnerem, i když nemáte náladu?",
+  "Musím často vyhledávat lidi, kteří by mi rozmluvili mé „černé myšlenky“.",
+  "Musím přiznat, že moje nálada je velmi proměnlivá. Někdy se cítím dost rozrušený, aniž by se stalo něco, co tento pocit vyvolalo.",
+  "Mám sklon být příliš citlivý na kritiku nebo nevlídné poznámky.",
+  "Dost často trpím pocitem viny bez skutečného důvodu.",
+  "Často se cítím velmi napjatý a vzrušený.",
+  "Čas od času se stávám rozčileným, nejistým a utrápeným.",
+  "Dosti snadno se stávám podrážděným a špatně naloženým.",
+  "Jsem ustaraný a mám sklon vidět černé stránky věcí.",
+  "Mám sklon probírat minulé problémy a myslet na to, co se stane.",
+  "Stávám se velmi nervózním, když se něco nedaří.",
+  "Mám sklon se příliš podceňovat a srovnávat se s druhými lidmi ve svůj neprospěch.",
+  "Nespím příliš dobře a asi se cítím unavenější než druzí.",
 ];
 
 type Message = {
@@ -97,23 +95,18 @@ const Test = () => {
                 <li
                   className={`${message.result >= 0 && message.result <= 4 ? "font-bold" : ""}`}
                 >
-                  0-4 – máte sklony k agresivitě
+                  0-5 – v normě
                 </li>
                 <li
                   className={`${message.result >= 5 && message.result <= 10 ? "font-bold" : ""}`}
                 >
-                  5-10 – jste asertivní
-                </li>
-                <li
-                  className={`${message.result >= 11 && message.result <= 14 ? "font-bold" : ""}`}
-                >
-                  11-14 – jste submisivní (podřídivý)
+                  6-12 – vaše citlivost je zvýšena
                 </li>
               </ul>
               <p className={`my-0`}>
-                I tak nezapomeňte, že je plně ve vašich silách překonat
-                nedostatek sebedůvěry a vzít otěže svého života do vlastních
-                rukou.
+                Výše skóre vám ukazuje vaši tendenci ke zranitelnosti,
+                přecitlivělosti, k braní věcí na příliš těžkou váhu a příliš k
+                srdci.
               </p>
             </>
           )}
