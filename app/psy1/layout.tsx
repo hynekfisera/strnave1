@@ -4,7 +4,10 @@ import ProseWrapper from "@/components/markdown/ProseWrapper";
 import Container from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "PSY1",
+  title: {
+    template: "%s - PSY1 | PhDr. Věra Strnadová, Ph.D.",
+    default: "PSY1 | PhDr. Věra Strnadová, Ph.D.",
+  },
 };
 
 export default function Layout({
