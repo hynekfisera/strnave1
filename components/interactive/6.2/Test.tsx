@@ -54,7 +54,7 @@ const Test = () => {
   };
 
   return (
-    <section className={`flex flex-col gap-10`}>
+    <section className={`flex flex-col gap-6`}>
       <DontForget />
       <form
         onSubmit={handleSubmit}
@@ -66,7 +66,9 @@ const Test = () => {
               key={index}
               className={`py-4 flex flex-row gap-2 items-center justify-between`}
             >
-              <label htmlFor={`question-${index}`}>{question}</label>
+              <label htmlFor={`question-${index}`} className={`select-none`}>
+                {question}
+              </label>
               <select
                 name={`question-${index}`}
                 id={`question-${index}`}

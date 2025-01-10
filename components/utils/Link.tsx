@@ -27,7 +27,10 @@ export default function Link({ href, className, children, file }: Props) {
   }
 
   return (
-    <a href={hrefBuilder} className={`${className ?? ""} cursor-pointer`}>
+    <a
+      href={hrefBuilder}
+      className={`${className ?? ""} cursor-pointer select-none`}
+    >
       {children}
     </a>
   );

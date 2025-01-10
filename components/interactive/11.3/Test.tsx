@@ -267,7 +267,7 @@ const Test = () => {
   };
 
   return (
-    <section className={`flex flex-col gap-10`}>
+    <section className={`flex flex-col gap-6`}>
       <DontForget />
       <form
         onSubmit={handleSubmit}
