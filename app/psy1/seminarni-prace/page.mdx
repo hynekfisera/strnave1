@@ -1,4 +1,6 @@
 import Link from "@/components/utils/Link";
+import Image from "next/image";
+import DotaznikUlozit from "@/public/mdx/dotaznik_ulozit.png";
 
 export const metadata = {
     title: `Seminární práce`,
@@ -6,10 +8,21 @@ export const metadata = {
 
 # Seminární práce
 
-- <Link href="/doc/psy1_seminarka.pdf" file>
-    Zadání seminární práce
-  </Link>
-- <Link href="/psy1/ukoly/12.4">Text "Devatero první pomoci ve stresu"</Link>
-- <Link href="https://forms.office.com/e/G53pV4Ca5R">
-    Dotazník "Stresové faktory u studentů vysoké školy"
-  </Link>
+- **Téma** - Osobnost a stres
+- **Rozsah** - 7-10 stran formátu A4
+
+**Termín odevzdání bude zadán při výuce.**
+
+## Zadání
+
+Seminární práce má tři části.
+
+1. Na základě textu <Link href="/psy1/ukoly/12.4">"Devatero první pomoci ve stresu"</Link> vypište, které z uvedených postupů používáte při zvládání své zvýšené stresové zátěže.
+2. Vyplňte dotazník [Dotazník "Stresové faktory u studentů vysoké školy"](https://forms.office.com/e/G53pV4Ca5R) a odešlete. Poté si projděte znovu všechny odpovědi dotazníku a vyhodnoťte, zda jste se svým životem spokojení (jaké postupy vám pomáhají) či nejste (jak byste svůj život mohli změnit). Tuto analýzu zapište do seminární práce. **Nezapomeňte si po odeslání dotazníku uložit své odpovědi, abyste do nich mohli zpětně nahlížet při psaní analýzy.**
+
+<div className={`flex justify-center`}>
+    <Image src={DotaznikUlozit} alt="Uložení odpovědí dotazníku" className={`border border-gray-600 shadow-sm`} />
+</div>
+
+3. Přečtěte si jakoukoli knihu o stresové problematice, zapište její recenzi – hodnocení, a konkrétně rozeberte určitou kapitolu, která vás zaujme.
+
