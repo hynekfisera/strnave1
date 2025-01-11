@@ -133,36 +133,36 @@ const Test = () => {
               className={`py-8 sm:py-4 grid sm:grid-cols-2 gap-2 sm:gap-6`}
             >
               <div
-                className={`flex flex-row justify-between items-center gap-4 flex-nowrap`}
+                className={`flex flex-row justify-between items-center gap-4 flex-nowrap sm:flex-row-reverse`}
               >
-                <label
-                  htmlFor={`question-${index}-left`}
-                  className={`w-full select-none sm:text-right`}
-                >
-                  {question.left}
-                </label>
                 <input
                   type="radio"
                   name={`question-${index}`}
                   id={`question-${index}-left`}
                   value={`left`}
                 />
+                <label
+                  htmlFor={`question-${index}-left`}
+                  className={`w-full select-none sm:text-right`}
+                >
+                  {question.left}
+                </label>
               </div>
               <div
-                className={`flex flex-row justify-between items-center gap-4 flex-nowrap sm:flex-row-reverse`}
+                className={`flex flex-row justify-between items-center gap-4 flex-nowrap`}
               >
-                <label
-                  htmlFor={`question-${index}-right`}
-                  className={`w-full select-none`}
-                >
-                  {question.right}
-                </label>
                 <input
                   type="radio"
                   name={`question-${index}`}
                   id={`question-${index}-right`}
                   value={`right`}
                 />
+                <label
+                  htmlFor={`question-${index}-right`}
+                  className={`w-full select-none`}
+                >
+                  {question.right}
+                </label>
               </div>
             </div>
           ))}
