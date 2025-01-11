@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-/* import Navigation from "../Navigation"; */
+import Navigation from "../Navigation";
 import ProseWrapper from "@/components/markdown/ProseWrapper";
 import Container from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "PSY2",
+  title: {
+    template: "%s - PSY2 | PhDr. Věra Strnadová, Ph.D.",
+    default: "PSY2 | PhDr. Věra Strnadová, Ph.D.",
+  },
 };
 
 export default function Layout({
@@ -14,7 +17,7 @@ export default function Layout({
 }>) {
   return (
     <div>
-      {/* <Navigation subject="PSY2" /> */}
+      <Navigation subject="PSY2" />
       <Container>
         <ProseWrapper>{children}</ProseWrapper>
       </Container>
